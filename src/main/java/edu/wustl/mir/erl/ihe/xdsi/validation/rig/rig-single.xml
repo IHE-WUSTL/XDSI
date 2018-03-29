@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Test id="rig-2001" sut="rig">
+	<Namespaces>
+		<Namespace uri="http://www.w3.org/2003/05/soap-envelope" prefix="soapenv" />
+		<Namespace uri="http://www.w3.org/2005/08/addressing" prefix="wsa" />
+		<Namespace uri="urn:oasis:names:tc:ebxml-regrep:xsd:rs:3.0" prefix="rs" />
+		<Namespace uri="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0" prefix="rim" />
+		<Namespace uri="urn:ihe:rad:xdsi-b:2009" prefix="xdsib" />
+		<Namespace uri="urn:ihe:iti:xds-b:2007" prefix="xdsb" />
+	</Namespaces>
+	<Transactions>
+	   <Transaction id="RAD-75" name="RAD-75 single image 'rig-2001'">
+		   <Component id="ResponseHeader">
+			   <Assertions>
+			      <Assertion name="Action element" type="present" 
+			                 xpath="//soapenv:Header/wsa:Action"/>
+				   <Assertion name="Action text" type="constant" 
+				              xpath="//soapenv:Header/wsa:Action/text()" 
+				              value="urn:ihe:rad:2011:CrossGatewayRetrieveImagingDocumentSetResponse"/>
+			   </Assertions>
+		   </Component>
+		   <Component id="ResponseBody">
+		   <Assertions>
+		   <Assertion name="status code" type="constant" 
+		              xpath="//xdsb:RetrieveDocumentSetResponse/rs:RegistryResponse/@status" 
+		              value="urn:oasis:names:tc:ebxml-regrep:ResponseStatusType:Success"/>
+         <Assertion name="DocumentResponse element" type="present" 
+                    xpath="//xdsb:RetrieveDocumentSetResponse/xdsb:DocumentResponse/xdsb:DocumentUniqueId[text()='1.3.6.1.4.1.21367.201599.3.201604121932047.1']"/>
+         <Assertion name="mimetype" type="same" 
+                    xpath="//xdsb:RetrieveDocumentSetResponse/xdsb:DocumentResponse[xdsb:DocumentUniqueId/text()='1.3.6.1.4.1.21367.201599.3.201604121932047.1']/xdsb:mimeType/text()"/>
+         <Assertion name="repository UID" type="same" 
+                    xpath="//xdsb:RetrieveDocumentSetResponse/xdsb:DocumentResponse[xdsb:DocumentUniqueId/text()='1.3.6.1.4.1.21367.201599.3.201604121932047.1']/xdsb:RepositoryUniqueId/text()"/>
+         <Assertion name="document UID" type="same" 
+                    xpath="//xdsb:RetrieveDocumentSetResponse/xdsb:DocumentResponse[xdsb:DocumentUniqueId/text()='1.3.6.1.4.1.21367.201599.3.201604121932047.1']/xdsb:DocumentUniqueId/text()"/>
+         <Assertion name="home community UID" type="same" 
+                    xpath="//xdsb:RetrieveDocumentSetResponse/xdsb:DocumentResponse[xdsb:DocumentUniqueId/text()='1.3.6.1.4.1.21367.201599.3.201604121932047.1']/xdsb:HomeCommunityId/text()"/>
+         </Assertions>
+		   </Component>
+	   </Transaction>
+	   <Transaction id="RAD-69" name="rig-2001 RAD-69">
+	      <!-- This is ids grouped with rig_a -->
+	      <GetSoap simulatorName="rig_a" simulatorType="ids" transactionType="ret.ids"/>
+	      <Component id="RequestHeader">
+            <Assertions>
+               <Assertion name="Action element" type="present" 
+                          xpath="//soapenv:Header/wsa:Action"/>
+               <Assertion name="Action text" type="constant" 
+                          xpath="//soapenv:Header/wsa:Action/text()" 
+                          value="urn:ihe:rad:2011:CrossGatewayRetrieveImagingDocumentSet"/>
+            </Assertions>
+	      </Component>
+	      <Component id="RequestBody">
+         <Assertions>
+	         <Assertion name="home community UID" type="same"
+	            xpath="//xdsb:HomeCommunityId/text()"/>
+	         <Assertion name="repository UID" type ="same"
+	            xpath="//xdsb:RepositoryUniqueId"/>
+            </Assertions>
+	      </Component>
+	   </Transaction>
+   </Transactions>
+</Test>

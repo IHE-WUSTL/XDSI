@@ -1,0 +1,9 @@
+I#!/bin/csh
+
+# XDSI=/opt/xdsi
+# JAVA_HOME=/usr/local/java/jdk1.8.0_65
+
+# cd /home/mkelsey/XDSI-04/git/erl-ihe-xdsi/src/main/tests/ids/ids-multi-image
+# ./y.csh > z.txt
+
+java -cp /opt/xdsi/lib/ERL-IHE-XDSI.jar edu.wustl.mir.erl.ihe.xdsi.validation.TestRAD68ImagingDocumentSource TESTLOGS xdsi01__rep-reg DEPT201512211350042 AD201512211350042

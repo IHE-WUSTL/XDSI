@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- iig-1007  Unknown Responding Gateway, Single Gateway
+     A retrieve request is sent to the  Initiating Imaging Gateway for one 
+     imaging study from Community A using one transfer syntax value:
+        1.2.840.10008.1.2.1
+     The homeCommunityId in the RAD-69 request does not represent a community 
+     that is known to the Initiating Imaging Gateway. The test points are:
+        1. The Initiating Imaging Gateway is able to accept a RAD-69 transaction 
+           from an Imaging Document Consumer, determine that the homeCommunityId 
+           does not represent a known gateway and return an appropriate error 
+           response.
+        2. No images are returned in the RAD-69 response.
+-->
+<Test id="iig-1007" sut="iig">
+   <Namespaces>
+      <Namespace uri="http://www.w3.org/2003/05/soap-envelope" prefix="soapenv" />
+      <Namespace uri="http://www.w3.org/2005/08/addressing" prefix="wsa" />
+      <Namespace uri="urn:oasis:names:tc:ebxml-regrep:xsd:rs:3.0" prefix="rs" />
+      <Namespace uri="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0" prefix="rim" />
+      <Namespace uri="urn:ihe:rad:xdsi-b:2009" prefix="xdsiB" />
+      <Namespace uri="urn:ihe:iti:xds-b:2007" prefix="xdsb" />
+   </Namespaces>
+   <Transactions>
+      <Transaction id="RAD-69" name="Unknown RIG RAD-69">
+ 			<Component id="ResponseHeader">
+				<Assertions>
+					<Assertion name="Action element" type="present"
+						xpath="//soapenv:Header/wsa:Action" />
+					<Assertion name="Action text" type="constant"
+						xpath="//soapenv:Header/wsa:Action/text()" value="urn:ihe:iti:2007:RetrieveDocumentSetResponse" />
+				</Assertions>
+			</Component>
+			<Component id="ResponseBody" subTitle="RetrieveDocumentSetResponse">
+				<Assertions>
+					<Assertion name="status code" type="constant"
+						xpath="//xdsb:RetrieveDocumentSetResponse/rs:RegistryResponse/@status"
+						value="urn:oasis:names:tc:ebxml-regrep:ResponseStatusType:Failure" />
+					<Assertion name="DocumentResponse element" type="absent"
+						xpath="//xdsb:RetrieveDocumentSetResponse/xdsb:DocumentResponse" />
+				</Assertions>
+			</Component>
+      </Transaction>
+      <!--  There is no RAD-75 transaction -->
+      <!--  The Responding Imaging Gateway is not known, so no RAD-75 transaction is sent -->
+   </Transactions>
+</Test>

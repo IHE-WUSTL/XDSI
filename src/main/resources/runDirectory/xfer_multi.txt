@@ -1,0 +1,6 @@
+# Test for multiple Transfer Syntaxes
+1.2.840.10008.1.2               # Implicit VR Little Endian Default Transfer Syntax
+1.2.840.10008.1.2.1             # Explicit VR Little Endian Transfer Syntax
+1.2.840.10008.1.2.4.50          # JPEG Baseline
+1.2.840.10008.1.2.4.51          # JPEG Extended
+1.2.840.10008.1.2.4.57          # JPEG Lossless

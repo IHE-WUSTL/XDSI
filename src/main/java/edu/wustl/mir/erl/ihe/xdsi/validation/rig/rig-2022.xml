@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- rig-2022 Consolidated Success/Failure, Multiple IDS Actors
+     A retrieve request is sent to the  Responding Imaging Gateway for two 
+     studies in separate Imaging Document Sources using one transfer syntax 
+     value:
+        1.2.840.10008.1.2.1
+     One study is located in Imaging Document Source E. The second study is 
+     requested as if it exists in Imaging Document Source F, but the study does 
+     not in fact exist. This is simulating an error condition where the 
+     Responding Imaging Gateway will have to consolidate the results and provide 
+     a PartialSuccess status.. The test points are:
+        1. The Responding Imaging Gateway is able to accept a RAD-75 transaction 
+           from an Initiating Imaging Gateway simulator, trigger RAD-69 
+           transactions to the Imaging Document Source simulators (E and F), 
+           gather the results and return a proper RAD-75 response to the 
+           Initiating Imaging Gateway simulator. The RAD-75 response contains a 
+           PartialSuccess status.
+        2. The RAD-69 transactions includes all parameters, including the proper 
+           Repository Unique ID.
+        3. The retrieved images are encoded with the proper transfer syntax and 
+           has proper identifiers (UIDs).
+ -->
+<Test id="rig-2022" sut="rig">
+   <Namespaces>
+      <Namespace uri="http://www.w3.org/2003/05/soap-envelope" prefix="soapenv" />
+      <Namespace uri="http://www.w3.org/2005/08/addressing" prefix="wsa" />
+      <Namespace uri="urn:oasis:names:tc:ebxml-regrep:xsd:rs:3.0" prefix="rs" />
+      <Namespace uri="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0" prefix="rim" />
+      <Namespace uri="urn:ihe:rad:xdsi-b:2009" prefix="xdsib" />
+      <Namespace uri="urn:ihe:iti:xds-b:2007" prefix="xdsb" />
+   </Namespaces>
+   <Transactions>
+      <Transaction id="RAD-75" name="Success/Fail Multi IDS RAD-75">
+			<Component id="ResponseHeader" subTitle="CrossGatewayRetrieveDocumentSetResponse">
+				<Assertions>
+					<Assertion name="Action element" type="present"
+						xpath="//soapenv:Header/wsa:Action" />
+					<Assertion name="Action text" type="constant"
+						xpath="//soapenv:Header/wsa:Action/text()" value="urn:ihe:rad:2011:CrossGatewayRetrieveImagingDocumentSetResponse" />
+				</Assertions>
+			</Component>
+			<Component id="ResponseBody">
+				<Assertions>
+					<Assertion name="status code" type="constant"
+						xpath="//xdsb:RetrieveDocumentSetResponse/rs:RegistryResponse/@status"
+						value="urn:ihe:iti:2007:ResponseStatusType:PartialSuccess" />
+					<Assertion name="Returned doc(s)" type="sameRetImgs"/>
+				</Assertions>
+			</Component>
+      </Transaction>
+      <Transaction id="RAD-69-E" name="Partial Success Multi IDS RAD-69">
+			<!-- This is ids_e grouped with the RIG simulator -->
+			<GetSoap simulatorName="ids_e" simulatorType="ids"
+				transactionType="ret.ids" />
+			<Component id="RequestHeader">
+				<Assertions>
+					<Assertion name="Action element" type="present"
+						xpath="//soapenv:Header/wsa:Action" />
+					<Assertion name="Action text" type="constant"
+						xpath="//soapenv:Header/wsa:Action/text()" value="urn:ihe:rad:2009:RetrieveImagingDocumentSet" />
+				</Assertions>
+			</Component>
+			<Component id="RequestBody">
+				<Assertions>
+					<Assertion name="requested doc(s)" type="sameImgs" />
+					<Assertion name="transfer syntax id(s)" type="sameXfer" />
+				</Assertions>
+			</Component>
+      </Transaction>
+      <Transaction id="RAD-69-F" name="Partial Success Multi IDS RAD-69">
+			<!-- This is ids_f grouped with the RIG simulator -->
+			<GetSoap simulatorName="ids_f" simulatorType="ids"
+				transactionType="ret.ids" />
+			<Component id="RequestHeader">
+				<Assertions>
+					<Assertion name="Action element" type="present"
+						xpath="//soapenv:Header/wsa:Action" />
+					<Assertion name="Action text" type="constant"
+						xpath="//soapenv:Header/wsa:Action/text()" value="urn:ihe:rad:2009:RetrieveImagingDocumentSet" />
+				</Assertions>
+			</Component>
+			<Component id="RequestBody">
+				<Assertions>
+					<Assertion name="requested doc(s)" type="sameImgs" />
+					<Assertion name="transfer syntax id(s)" type="sameXfer" />
+				</Assertions>
+			</Component>
+      </Transaction>
+   </Transactions>
+</Test>

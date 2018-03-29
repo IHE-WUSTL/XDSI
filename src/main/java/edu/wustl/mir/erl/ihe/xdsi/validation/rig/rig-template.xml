@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- rig-20 
+
+ -->
+<Test id="rig-2001" sut="rig">
+   <Namespaces>
+      <Namespace uri="http://www.w3.org/2003/05/soap-envelope" prefix="soapenv" />
+      <Namespace uri="http://www.w3.org/2005/08/addressing" prefix="wsa" />
+      <Namespace uri="urn:oasis:names:tc:ebxml-regrep:xsd:rs:3.0" prefix="rs" />
+      <Namespace uri="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0" prefix="rim" />
+      <Namespace uri="urn:ihe:rad:xdsi-b:2009" prefix="xdsib" />
+      <Namespace uri="urn:ihe:iti:xds-b:2007" prefix="xdsb" />
+   </Namespaces>
+   <Transactions>
+      <Transaction id="RAD-75" name="single image RAD-75">
+         <Component id="ResponseHeader">
+            <Assertions>
+               <Assertion name="lorum ipsum" 
+                          type="present|absent|constant|same"
+                          xpath="xPath to item being asserted" 
+                          value="value for constant types"/>
+               <Assertion name="" type=""
+                  xpath="" value="" />
+            </Assertions>
+         </Component>
+         <Component id="ResponseBody">
+         <Assertions>
+               <Assertion name="" type="" xpath="" value="" />
+         </Assertions>
+         </Component>
+      </Transaction>
+      <Transaction id="RAD-69" name="single image RAD-69">
+         <!-- This is ids grouped with rig_a -->
+         <GetSoap simulatorName="rig_a" simulatorType="ids" transactionType="ret.ids"/>
+         <Component id="RequestHeader">
+            <Assertions>
+               <Assertion name="" type="" xpath="" value="" />
+            </Assertions>
+         </Component>
+         <Component id="RequestBody">
+         <Assertions>
+               <Assertion name="" type="" xpath="" value="" />
+            </Assertions>
+         </Component>
+      </Transaction>
+   </Transactions>
+</Test>

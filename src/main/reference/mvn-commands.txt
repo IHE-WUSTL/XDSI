@@ -1,0 +1,5 @@
+mvn install:install-file -Dfile=/home/rmoult01/Desktop/dcm4che3/dcm4che-core-3.3.7.jar -DgroupId=org.dcm4che -DartifactId=dcm4che-core -Dversion=3.3.7 -Dpackaging=jar
+
+mvn install:install-file -Dfile=/home/rmoult01/Desktop/dcm4che3/dcm4che-tool-common-3.3.7.jar -DgroupId=org.dcm4che.tool -DartifactId=dcm4che-tool -Dversion=3.3.7 -Dpackaging=jar
+
+mvn install:install-file -Dfile=/home/rmoult01/Desktop/dcm4che3/dcm4che-3.3.7-javadoc.jar -DgroupId=org.dcm4che -DartifactId=dcm4che-core -Dversion=3.3.7 -Dpackaging=jar -Dclassifier=javadoc

@@ -1,0 +1,242 @@
+**** Web Service: /xdstools2/sim/xdsi01__rep-reg/rep/prb [ServiceRequestContainer] 	VC: [???]
+SECTIONHEADING
+    Endpoint[OK]
+
+DETAIL
+    Endpoint is /xdstools2/sim/xdsi01__rep-reg/rep/prb[OK]
+
+Default ErrorRecorder [ServiceRequestContainer] 	VC: [Request;PnR;HTTP;SOAP;xds.b]
+Parse HTTP Message [HttpMessageValidator] 	VC: [Request;PnR;HTTP;SOAP;xds.b]
+SECTIONHEADING
+    HTTP message format validation[OK]
+
+
+Validate MTOM [MtomMessageValidator] 	VC: [Request;PnR;HTTP;SOAP;xds.b]
+DETAIL
+    boundary string = MIMEBoundary_b929dcecea9205fd33537da8039b02af3a6e3abd608cd27b[OK]
+
+DETAIL
+    multipart has 2 parts[OK]
+
+DETAIL
+    Start Part identified as [0.8929dcecea9205fd33537da8039b02af3a6e3abd608cd27b@apache.org][OK]
+
+DETAIL
+    ContentType is multipart/related[OK]
+
+DETAIL
+    ContentType type param is application/xop+xml[OK]
+
+DETAIL
+    Multipart contains 2 parts[OK]
+
+DETAIL
+    Part Content-IDs are [0.8929dcecea9205fd33537da8039b02af3a6e3abd608cd27b@apache.org, 1.9929dcecea9205fd33537da8039b02af3a6e3abd608cd27b@apache.org][OK]
+
+DETAIL
+    Found start part - 0.8929dcecea9205fd33537da8039b02af3a6e3abd608cd27b@apache.org[OK]
+
+DETAIL
+    Scheduling validation of SOAP wrapper[OK]
+
+MultipartContainer [MultipartContainer] 	VC: [Request;PnR;HTTP;SOAP;xds.b]
+DETAIL
+    Have content for ...[OK]
+
+DETAIL
+    0.8929dcecea9205fd33537da8039b02af3a6e3abd608cd27b@apache.org ==> 15904 characters[OK]
+
+DETAIL
+    1.9929dcecea9205fd33537da8039b02af3a6e3abd608cd27b@apache.org ==> 1598 characters[OK]
+
+Parse Decision - Running requested validation - ProvideAndRegister.b with SOAP Wrapper [ServiceRequestContainer] 	VC: [???]
+SOAP Message Parser [SoapMessageParser] 	VC: [Request;PnR;HTTP;SOAP;xds.b]
+SOAP Message Validator [SoapMessageValidator] 	VC: [Request;PnR;HTTP;SOAP;xds.b]
+
+
+
+
+CHALLENGE
+    Validate SOAP Header[OK]
+
+
+DETAIL
+    Namespace on WS:Addressing Header elements: No errors[OK]
+
+
+
+
+
+
+
+DETAIL
+    Cardinality of WS:Addressing Header elements: No errors[OK]
+
+DETAIL
+    WS-Action: urn:ihe:iti:2007:ProvideAndRegisterDocumentSet-b[OK]
+
+
+
+
+CHALLENGE
+    Checking expected WS-Action against SOAP Body contents[OK]
+
+DETAIL
+    Scheduling validation of body based on requested message type[OK]
+
+Message Body Container [MessageBodyContainer] 	VC: [Request;PnR;HTTP;SOAP;xds.b]
+Parse Metadata Wrappers [WrapperValidator] 	VC: [Request;PnR;HTTP;SOAP;xds.b]
+Validate Metadata Element Ordering [MetadataOrderValidator] 	VC: [Request;PnR;HTTP;SOAP;xds.b]
+DocumentAttachmentMapper [DocumentAttachmentMapper] 	VC: [Request;PnR;HTTP;SOAP;xds.b]
+DETAIL
+    Parsing Document id="urn:uuid:9c6fd84f-706a-4262-9ed8-8f7ace932ec5"[OK]
+
+DETAIL
+    Optimized MTOM/XOP format found. Include points to Multipart Part where content should be found[OK]
+
+DETAIL
+    Maps to attachment 1.9929dcecea9205fd33537da8039b02af3a6e3abd608cd27b@apache.org[OK]
+
+Schema Validator [SchemaValidator] 	VC: [Request;PnR;HTTP;SOAP;xds.b]
+DETAIL
+    Metadata Type (for selecting Schema) is METADATA_TYPE_PRb[OK]
+
+ProvideAndRegisterDocumentSetRequest [MetadataMessageValidator] 	VC: [Request;PnR;HTTP;SOAP;xds.b]
+SECTIONHEADING
+    Content Summary[OK]
+
+DETAIL
+    1 SubmissionSets[OK]
+
+DETAIL
+    1 DocumentEntries[OK]
+
+DETAIL
+    0 Folders[OK]
+
+DETAIL
+    1 Associations[OK]
+
+SECTIONHEADING
+    Evaluating metadata object structure[OK]
+
+SECTIONHEADING
+    SubmissionSet(urn:uuid:1ac3500d-f547-4b5e-a95d-ceb10ad04803)[OK]
+
+CHALLENGE
+    Validating that Slots present are legal[OK]
+
+CHALLENGE
+    Validating required Slots present[OK]
+
+CHALLENGE
+    Validating Slots are coded correctly[OK]
+
+CHALLENGE
+    Validating Classifications present are legal[OK]
+
+CHALLENGE
+    Validating Required Classifications present[OK]
+
+CHALLENGE
+    Validating Classifications coded correctly[OK]
+
+CHALLENGE
+    Validating ExternalIdentifiers present are legal[OK]
+
+CHALLENGE
+    Validating Required ExternalIdentifiers present[OK]
+
+CHALLENGE
+    Validating ExternalIdentifiers coded correctly[OK]
+
+SECTIONHEADING
+    DocumentEntry(urn:uuid:9c6fd84f-706a-4262-9ed8-8f7ace932ec5)[OK]
+
+CHALLENGE
+    Validating that Slots present are legal[OK]
+
+CHALLENGE
+    Validating required Slots present[OK]
+
+CHALLENGE
+    Validating Slots are coded correctly[OK]
+
+CHALLENGE
+    Validating Classifications present are legal[OK]
+
+CHALLENGE
+    Validating Required Classifications present[OK]
+
+CHALLENGE
+    Validating Classifications coded correctly[OK]
+
+CHALLENGE
+    Validating ExternalIdentifiers present are legal[OK]
+
+CHALLENGE
+    Validating Required ExternalIdentifiers present[OK]
+
+CHALLENGE
+    Validating ExternalIdentifiers coded correctly[OK]
+
+SECTIONHEADING
+    Association(urn:uuid:2212bc85-ee27-4b78-b47e-906de225038d)[OK]
+
+CHALLENGE
+    Validating that Slots present are legal[OK]
+
+CHALLENGE
+    Validating required Slots present[OK]
+
+CHALLENGE
+    Validating Slots are coded correctly[OK]
+
+CHALLENGE
+    Classifications present are legal[OK]
+
+CHALLENGE
+    Required Classifications present[OK]
+
+CHALLENGE
+    Classifications coded correctly[OK]
+
+CHALLENGE
+    Validating ExternalIdentifiers present are legal[OK]
+
+CHALLENGE
+    Validating Required ExternalIdentifiers present[OK]
+
+CHALLENGE
+    Validating ExternalIdentifiers coded correctly[OK]
+
+SECTIONHEADING
+    Other metadata objects[OK]
+
+SECTIONHEADING
+    Evaluating use of Affinity Domain coding[OK]
+
+SECTIONHEADING
+    Submission Structure[OK]
+
+DETAIL
+    SubmissionSet(urn:uuid:1ac3500d-f547-4b5e-a95d-ceb10ad04803): SubmissionSet found[OK]
+
+DETAIL
+    Association(urn:uuid:2212bc85-ee27-4b78-b47e-906de225038d): is a SubmissionSet to DocmentEntry HasMember association[OK]
+
+DocumentElementValidator [DocumentElementValidator] 	VC: [Request;PnR;HTTP;SOAP;xds.b]
+MetadataContainer [MetadataContainer] 	VC: [Request;PnR;HTTP;SOAP;xds.b]
+DETAIL
+    0 steps with errors[OK]
+
+PnR [RepPnRSim] 	VC: [Request;PnR;HTTP;SOAP;xds.b]
+Attach Errors [RegistryResponseGeneratorSim] 	VC: [Request;PnR;HTTP;SOAP;xds.b]
+ResponseInSoapWrapper [SoapWrapperRegistryResponseSim] 	VC: [Request;PnR;HTTP;SOAP;xds.b]
+DETAIL
+    Wrapping response in SOAP Message[OK]
+
+DETAIL
+    Wrapping in Multipart[OK]
+
+RegistryResponse [ServiceRequestContainer] 	VC: [???]

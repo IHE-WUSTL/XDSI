@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This is a simplistic version of iig-1001, used in preliminary testing -->
+<Test id="iig-1001" sut="iig">
+	<Namespaces>
+		<Namespace uri="http://www.w3.org/2003/05/soap-envelope" prefix="soapenv" />
+		<Namespace uri="http://www.w3.org/2005/08/addressing" prefix="wsa" />
+		<Namespace uri="urn:oasis:names:tc:ebxml-regrep:xsd:rs:3.0" prefix="rs" />
+		<Namespace uri="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0" prefix="rim" />
+		<Namespace uri="urn:ihe:rad:xdsi-b:2009" prefix="xdsiB" />
+		<Namespace uri="urn:ihe:iti:xds-b:2007" prefix="xdsb" />
+	</Namespaces>
+	<Transactions>
+		<Transaction id="RAD-69" name="single image RAD-69">
+			<Component id="ResponseHeader">
+				<Assertions>
+					<Assertion name="Action element" type="present"
+						xpath="//soapenv:Header/wsa:Action" />
+					<Assertion name="Action text" type="constant"
+						xpath="//soapenv:Header/wsa:Action/text()" value="urn:ihe:iti:2007:RetrieveDocumentSetResponse" />
+				</Assertions>
+			</Component>
+			<Component id="ResponseBody" subTitle="RetrieveDocumentSetResponse">
+				<Assertions>
+					<Assertion name="status code" type="constant"
+						xpath="//xdsb:RetrieveDocumentSetResponse/rs:RegistryResponse/@status"
+						value="urn:oasis:names:tc:ebxml-regrep:ResponseStatusType:Success" />
+					<Assertion name="DocumentResponse element" type="present"
+						xpath="//xdsb:RetrieveDocumentSetResponse/xdsb:DocumentResponse/xdsb:DocumentUniqueId[text()='1.3.6.1.4.1.21367.201599.3.201606010958036.1']" />
+					<Assertion name="mimetype" type="constant"
+						xpath="//xdsb:RetrieveDocumentSetResponse/xdsb:DocumentResponse[xdsb:DocumentUniqueId/text()='1.3.6.1.4.1.21367.201599.3.201606010958036.1']/xdsb:mimeType/text()"
+						value="application/dicom" />
+				</Assertions>
+			</Component>
+		</Transaction>
+		<Transaction id="RAD-75" name="single image RAD-75">
+		   <GetSoap simulatorName="rig_a" simulatorType="rig" transactionType="xcr.ids" />
+			<Component id="RequestHeader">
+				<Assertions>
+               <Assertion name="Action element" type="present"
+                  xpath="//soapenv:Header/wsa:Action" />
+               <Assertion name="Action text" type="constant"
+                  xpath="//soapenv:Header/wsa:Action/text()" value="urn:ihe:rad:2011:CrossGatewayRetrieveImagingDocumentSet" />
+				</Assertions>
+			</Component>
+			<Component id="RequestBody">
+				<Assertions>
+               <Assertion name="home community id" type="same"
+                  xpath="//xdsb:HomeCommunityId/text()"/>
+               <Assertion name="document unique id" type="same"
+                  xpath="//xdsb:DocumentUniqueId/text()"/>
+               <Assertion name="transfer syntax id" type="same"
+                  xpath="//xdsiB:TransferSyntaxUID/text()"/>
+                  </Assertions>
+			</Component>
+		</Transaction>
+	</Transactions>
+</Test>

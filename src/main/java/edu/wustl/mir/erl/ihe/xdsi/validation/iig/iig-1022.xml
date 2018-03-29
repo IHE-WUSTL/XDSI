@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IIG-1022: Consolidated Success/Failure, Multiple Gateways
+     Multi-PC retrieve including the edge case RIG, resulting in partial success 
+     and failure. Tests to see if IIG handles IAW RAD TF-3 4.75.4.1.3. 
+     Transaction generating a consolidated response from a RIG as well as 
+     responses from multiple RIGs, showing both successes and failures. 
+     Demonstrates the ability of the IIG to respond to the original RAD-69 
+     request from the Imaging Document Consumer with both DocumentResponse and 
+     RegistryErrorList elements in one response and specify PartialSuccess 
+     status.
+-->
+<Test id="iig-1022" sut="iig">
+   <Namespaces>
+      <Namespace uri="http://www.w3.org/2003/05/soap-envelope" prefix="soapenv" />
+      <Namespace uri="http://www.w3.org/2005/08/addressing" prefix="wsa" />
+      <Namespace uri="urn:oasis:names:tc:ebxml-regrep:xsd:rs:3.0" prefix="rs" />
+      <Namespace uri="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0" prefix="rim" />
+      <Namespace uri="urn:ihe:rad:xdsi-b:2009" prefix="xdsiB" />
+      <Namespace uri="urn:ihe:iti:xds-b:2007" prefix="xdsb" />
+   </Namespaces>
+   <Transactions>
+      <Transaction id="RAD-69" name="Multiple RIGs S/F RAD-69">
+ 			<Component id="ResponseHeader">
+				<Assertions>
+					<Assertion name="Action element" type="present"
+						xpath="//soapenv:Header/wsa:Action" />
+					<Assertion name="Action text" type="constant"
+						xpath="//soapenv:Header/wsa:Action/text()" value="urn:ihe:iti:2007:RetrieveDocumentSetResponse" />
+				</Assertions>
+			</Component>
+			<Component id="ResponseBody" subTitle="RetrieveDocumentSetResponse">
+				<Assertions>
+					<Assertion name="status code" type="constant"
+						xpath="//xdsb:RetrieveDocumentSetResponse/rs:RegistryResponse/@status"
+						value="urn:ihe:iti:2007:ResponseStatusType:PartialSuccess" />
+					<Assertion name="Returned doc(s)" type="sameRetImgs"/>
+				</Assertions>
+			</Component>
+      </Transaction>
+      <Transaction id="RAD-75-A" name="Multiple RIGs S/F RAD-75">
+		   <GetSoap simulatorName="rig_a" simulatorType="rig" transactionType="xcr.ids" />
+			<Component id="RequestHeader">
+				<Assertions>
+               <Assertion name="Action element" type="present"
+                  xpath="//soapenv:Header/wsa:Action" />
+               <Assertion name="Action text" type="constant"
+                  xpath="//soapenv:Header/wsa:Action/text()" value="urn:ihe:rad:2011:CrossGatewayRetrieveImagingDocumentSet" />
+				</Assertions>
+			</Component>
+			<Component id="RequestBody">
+				<Assertions>
+               <Assertion name="requested doc(s)" type="sameImgs"/>
+               <Assertion name="transfer syntax id(s)" type="sameXfer"/>
+                  </Assertions>
+			</Component>
+      </Transaction>
+      <Transaction id="RAD-75-B" name="Multiple RIGs S/F RAD-75">
+		   <GetSoap simulatorName="rig_b" simulatorType="rig" transactionType="xcr.ids" />
+			<Component id="RequestHeader">
+				<Assertions>
+               <Assertion name="Action element" type="present"
+                  xpath="//soapenv:Header/wsa:Action" />
+               <Assertion name="Action text" type="constant"
+                  xpath="//soapenv:Header/wsa:Action/text()" value="urn:ihe:rad:2011:CrossGatewayRetrieveImagingDocumentSet" />
+				</Assertions>
+			</Component>
+			<Component id="RequestBody">
+				<Assertions>
+               <Assertion name="requested doc(s)" type="sameImgs"/>
+               <Assertion name="transfer syntax id(s)" type="sameXfer"/>
+                  </Assertions>
+			</Component>
+      </Transaction>
+   </Transactions>
+</Test>

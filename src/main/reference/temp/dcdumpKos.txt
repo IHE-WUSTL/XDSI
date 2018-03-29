@@ -1,0 +1,1257 @@
+$ dcm_dump_file /opt/xdsi/runDirectory/results/kos.dcm 
+DICOM File: /opt/xdsi/runDirectory/results/kos.dcm
+   c0092 DCM group/element out of order (0000 0000) in checkAttributeOrder
+   20092 DCM failed to open file: /opt/xdsi/runDirectory/results/kos.dcm in DCM_OpenFile
+Could not open /opt/xdsi/runDirectory/results/kos.dcm as expected.  Trying Part 10 format.
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 11122
+Group: 0002, Length:      174
+0002 0000        4 //              META Group Length//      ae 174
+0002 0001        2 //META File Meta Information Version//00 01 
+0002 0002       30 //META Media Stored SOP Class UID//1.2.840.10008.5.1.4.1.1.88.59
+0002 0003       44 //META Media Stored SOP Instance UID//2.25.324103995061760214876491953063649056386
+0002 0010       20 //       META Transfer Syntax UID//1.2.840.10008.1.2.1
+0002 0012       16 //  META Implementation Class UID//1.2.40.0.13.1.1
+0002 0013       14 //META Implementation Version Name//dcm4che-3.3.7 
+Group: 0008, Length:      234
+0008 0005       10 //      ID Specific Character Set//ISO_IR 100
+0008 0016       30 //               ID SOP Class UID//1.2.840.10008.5.1.4.1.1.88.59
+0008 0018       44 //            ID SOP Instance UID//2.25.324103995061760214876491953063649056386
+0008 0020        8 //                  ID Study Date//19960415
+0008 0023        8 //                  ID Image Date//20151204
+0008 0030       14 //                  ID Study Time//154122.413000 
+0008 0033       10 //                  ID Image Time//135400.905
+0008 0050        4 //            ID Accession Number//1234
+0008 0060        2 //                    ID Modality//KO
+0008 0070        6 //                ID Manufacturer//WUSTL 
+0008 0090        2 //  ID Referring Physician's Name//  
+0008 1111        0 //ID Referenced Study Component Sequence//SEQUENCE
+DCM Dump Sequence
+DCM Dump Sequence Complete
+Group: 0010, Length:       52
+0010 0010       12 //               PAT Patient Name//Moulton^Fred
+0010 0020        6 //                 PAT Patient ID//id-19 
+0010 0030        0 //          PAT Patient Birthdate//
+0010 0040        2 //                PAT Patient Sex//F 
+Group: 0020, Length:      102
+0020 000d        8 //         REL Study Instance UID//1.2.3.4
+0020 000e       44 //        REL Series Instance UID//2.25.187044722377617091325529869797278902470
+0020 0010        4 //                   REL Study ID//1234
+0020 0011        4 //              REL Series Number//999 
+0020 0013        2 //               REL Image Number//1 
+Group: 0040, Length: 17179869246
+0040 a040       10 //                 PRC Value Type//CONTAINER 
+0040 a043 4294967295 // PRC Concept-name Code Sequence//SEQUENCE
+DCM Dump Sequence
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 54
+Group: 0008, Length:       46
+0008 0100        6 //                  ID Code Value//113000
+0008 0102        4 //    ID Coding Scheme Designator//DCM 
+0008 0104       12 //                ID Code Meaning//Of Interest 
+DCM Dump Elements Complete
+
+DCM Dump Sequence Complete
+0040 a050        8 //      PRC Continuity of Content//SEPARATE
+0040 a375 4294967295 //PRC Current Reqeusted Procedure Evidence Seq//SEQUENCE
+DCM Dump Sequence
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 3940
+Group: 0008, Length: 4294967303
+0008 1115 4294967295 //  ID Referenced Series Sequence//SEQUENCE
+DCM Dump Sequence
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 1718
+Group: 0008, Length: 4294967303
+0008 1199 4294967295 //     ID Referenced SOP Sequence//SEQUENCE
+DCM Dump Sequence
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 96
+Group: 0008, Length:       88
+0008 1150       26 //    ID Referenced SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 1155       46 // ID Referenced SOP Instance UID//1.3.6.1.4.1.21367.201599.3.201512041353035.13
+DCM Dump Elements Complete
+
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 94
+Group: 0008, Length:       86
+0008 1150       26 //    ID Referenced SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 1155       44 // ID Referenced SOP Instance UID//1.3.6.1.4.1.21367.201599.3.201512041353035.9
+DCM Dump Elements Complete
+
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 94
+Group: 0008, Length:       86
+0008 1150       26 //    ID Referenced SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 1155       44 // ID Referenced SOP Instance UID//1.3.6.1.4.1.21367.201599.3.201512041353035.2
+DCM Dump Elements Complete
+
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 94
+Group: 0008, Length:       86
+0008 1150       26 //    ID Referenced SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 1155       44 // ID Referenced SOP Instance UID//1.3.6.1.4.1.21367.201599.3.201512041353035.4
+DCM Dump Elements Complete
+
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 96
+Group: 0008, Length:       88
+0008 1150       26 //    ID Referenced SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 1155       46 // ID Referenced SOP Instance UID//1.3.6.1.4.1.21367.201599.3.201512041353035.11
+DCM Dump Elements Complete
+
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 92
+Group: 0008, Length:       84
+0008 1150       26 //    ID Referenced SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 1155       42 // ID Referenced SOP Instance UID//1.3.6.1.4.1.21367.201599.3.201512041353035
+DCM Dump Elements Complete
+
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 94
+Group: 0008, Length:       86
+0008 1150       26 //    ID Referenced SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 1155       44 // ID Referenced SOP Instance UID//1.3.6.1.4.1.21367.201599.3.201512041353035.1
+DCM Dump Elements Complete
+
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 96
+Group: 0008, Length:       88
+0008 1150       26 //    ID Referenced SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 1155       46 // ID Referenced SOP Instance UID//1.3.6.1.4.1.21367.201599.3.201512041353035.10
+DCM Dump Elements Complete
+
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 94
+Group: 0008, Length:       86
+0008 1150       26 //    ID Referenced SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 1155       44 // ID Referenced SOP Instance UID//1.3.6.1.4.1.21367.201599.3.201512041353035.7
+DCM Dump Elements Complete
+
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 94
+Group: 0008, Length:       86
+0008 1150       26 //    ID Referenced SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 1155       44 // ID Referenced SOP Instance UID//1.3.6.1.4.1.21367.201599.3.201512041353035.8
+DCM Dump Elements Complete
+
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 94
+Group: 0008, Length:       86
+0008 1150       26 //    ID Referenced SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 1155       44 // ID Referenced SOP Instance UID//1.3.6.1.4.1.21367.201599.3.201512041353035.6
+DCM Dump Elements Complete
+
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 94
+Group: 0008, Length:       86
+0008 1150       26 //    ID Referenced SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 1155       44 // ID Referenced SOP Instance UID//1.3.6.1.4.1.21367.201599.3.201512041353035.5
+DCM Dump Elements Complete
+
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 96
+Group: 0008, Length:       88
+0008 1150       26 //    ID Referenced SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 1155       46 // ID Referenced SOP Instance UID//1.3.6.1.4.1.21367.201599.3.201512041353035.12
+DCM Dump Elements Complete
+
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 94
+Group: 0008, Length:       86
+0008 1150       26 //    ID Referenced SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 1155       44 // ID Referenced SOP Instance UID//1.3.6.1.4.1.21367.201599.3.201512041353034.1
+DCM Dump Elements Complete
+
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 94
+Group: 0008, Length:       86
+0008 1150       26 //    ID Referenced SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 1155       44 // ID Referenced SOP Instance UID//1.3.6.1.4.1.21367.201599.3.201512041353035.3
+DCM Dump Elements Complete
+
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 96
+Group: 0008, Length:       88
+0008 1150       26 //    ID Referenced SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 1155       46 // ID Referenced SOP Instance UID//1.3.6.1.4.1.21367.201599.3.201512041353035.14
+DCM Dump Elements Complete
+
+DCM Dump Sequence Complete
+Group: 0020, Length:       50
+0020 000e       42 //        REL Series Instance UID//1.3.6.1.4.1.21367.201599.2.201512041353034
+DCM Dump Elements Complete
+
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 2162
+Group: 0008, Length: 4294967303
+0008 1199 4294967295 //     ID Referenced SOP Sequence//SEQUENCE
+DCM Dump Sequence
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 96
+Group: 0008, Length:       88
+0008 1150       26 //    ID Referenced SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 1155       46 // ID Referenced SOP Instance UID//1.3.6.1.4.1.21367.201599.3.201512041353035.35
+DCM Dump Elements Complete
+
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 96
+Group: 0008, Length:       88
+0008 1150       26 //    ID Referenced SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 1155       46 // ID Referenced SOP Instance UID//1.3.6.1.4.1.21367.201599.3.201512041353035.32
+DCM Dump Elements Complete
+
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 96
+Group: 0008, Length:       88
+0008 1150       26 //    ID Referenced SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 1155       46 // ID Referenced SOP Instance UID//1.3.6.1.4.1.21367.201599.3.201512041353035.33
+DCM Dump Elements Complete
+
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 96
+Group: 0008, Length:       88
+0008 1150       26 //    ID Referenced SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 1155       46 // ID Referenced SOP Instance UID//1.3.6.1.4.1.21367.201599.3.201512041353035.34
+DCM Dump Elements Complete
+
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 96
+Group: 0008, Length:       88
+0008 1150       26 //    ID Referenced SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 1155       46 // ID Referenced SOP Instance UID//1.3.6.1.4.1.21367.201599.3.201512041353035.22
+DCM Dump Elements Complete
+
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 96
+Group: 0008, Length:       88
+0008 1150       26 //    ID Referenced SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 1155       46 // ID Referenced SOP Instance UID//1.3.6.1.4.1.21367.201599.3.201512041353035.30
+DCM Dump Elements Complete
+
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 96
+Group: 0008, Length:       88
+0008 1150       26 //    ID Referenced SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 1155       46 // ID Referenced SOP Instance UID//1.3.6.1.4.1.21367.201599.3.201512041353035.18
+DCM Dump Elements Complete
+
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 96
+Group: 0008, Length:       88
+0008 1150       26 //    ID Referenced SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 1155       46 // ID Referenced SOP Instance UID//1.3.6.1.4.1.21367.201599.3.201512041353035.20
+DCM Dump Elements Complete
+
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 96
+Group: 0008, Length:       88
+0008 1150       26 //    ID Referenced SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 1155       46 // ID Referenced SOP Instance UID//1.3.6.1.4.1.21367.201599.3.201512041353035.21
+DCM Dump Elements Complete
+
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 96
+Group: 0008, Length:       88
+0008 1150       26 //    ID Referenced SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 1155       46 // ID Referenced SOP Instance UID//1.3.6.1.4.1.21367.201599.3.201512041353035.16
+DCM Dump Elements Complete
+
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 96
+Group: 0008, Length:       88
+0008 1150       26 //    ID Referenced SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 1155       46 // ID Referenced SOP Instance UID//1.3.6.1.4.1.21367.201599.3.201512041353035.26
+DCM Dump Elements Complete
+
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 96
+Group: 0008, Length:       88
+0008 1150       26 //    ID Referenced SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 1155       46 // ID Referenced SOP Instance UID//1.3.6.1.4.1.21367.201599.3.201512041353035.17
+DCM Dump Elements Complete
+
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 96
+Group: 0008, Length:       88
+0008 1150       26 //    ID Referenced SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 1155       46 // ID Referenced SOP Instance UID//1.3.6.1.4.1.21367.201599.3.201512041353035.29
+DCM Dump Elements Complete
+
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 96
+Group: 0008, Length:       88
+0008 1150       26 //    ID Referenced SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 1155       46 // ID Referenced SOP Instance UID//1.3.6.1.4.1.21367.201599.3.201512041353035.25
+DCM Dump Elements Complete
+
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 96
+Group: 0008, Length:       88
+0008 1150       26 //    ID Referenced SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 1155       46 // ID Referenced SOP Instance UID//1.3.6.1.4.1.21367.201599.3.201512041353035.24
+DCM Dump Elements Complete
+
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 96
+Group: 0008, Length:       88
+0008 1150       26 //    ID Referenced SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 1155       46 // ID Referenced SOP Instance UID//1.3.6.1.4.1.21367.201599.3.201512041353035.31
+DCM Dump Elements Complete
+
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 96
+Group: 0008, Length:       88
+0008 1150       26 //    ID Referenced SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 1155       46 // ID Referenced SOP Instance UID//1.3.6.1.4.1.21367.201599.3.201512041353035.23
+DCM Dump Elements Complete
+
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 96
+Group: 0008, Length:       88
+0008 1150       26 //    ID Referenced SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 1155       46 // ID Referenced SOP Instance UID//1.3.6.1.4.1.21367.201599.3.201512041353035.27
+DCM Dump Elements Complete
+
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 96
+Group: 0008, Length:       88
+0008 1150       26 //    ID Referenced SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 1155       46 // ID Referenced SOP Instance UID//1.3.6.1.4.1.21367.201599.3.201512041353035.28
+DCM Dump Elements Complete
+
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 96
+Group: 0008, Length:       88
+0008 1150       26 //    ID Referenced SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 1155       46 // ID Referenced SOP Instance UID//1.3.6.1.4.1.21367.201599.3.201512041353035.19
+DCM Dump Elements Complete
+
+DCM Dump Sequence Complete
+Group: 0020, Length:       54
+0020 000e       46 //        REL Series Instance UID//1.3.6.1.4.1.21367.201599.2.201512041353035.15
+DCM Dump Elements Complete
+
+DCM Dump Sequence Complete
+Group: 0020, Length:       16
+0020 000d        8 //         REL Study Instance UID//1.2.3.4
+DCM Dump Elements Complete
+
+DCM Dump Sequence Complete
+0040 a504 4294967295 //  PRC Content Template Sequence//SEQUENCE
+DCM Dump Sequence
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 32
+Group: 0008, Length:       12
+0008 0105        4 //            ID Mapping Resource//DCMR
+Group: 0040, Length:       12
+0040 db00        4 //        PRC Template Identifier//2010
+DCM Dump Elements Complete
+
+DCM Dump Sequence Complete
+0040 a730 4294967295 //           PRC Content Sequence//SEQUENCE
+DCM Dump Sequence
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 140
+Group: 0040, Length: 4294967339
+0040 a010        8 //          PRC Relationship Type//CONTAINS
+0040 a040        4 //                 PRC Value Type//TEXT
+0040 a043 4294967295 // PRC Concept-name Code Sequence//SEQUENCE
+DCM Dump Sequence
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 64
+Group: 0008, Length:       56
+0008 0100        6 //                  ID Code Value//113012
+0008 0102        4 //    ID Coding Scheme Designator//DCM 
+0008 0104       22 //                ID Code Meaning//Key Object Description
+DCM Dump Elements Complete
+
+DCM Dump Sequence Complete
+0040 a160        0 //                 PRC Text Value//
+DCM Dump Elements Complete
+
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 162
+Group: 0008, Length: 4294967303
+0008 1199 4294967295 //     ID Referenced SOP Sequence//SEQUENCE
+DCM Dump Sequence
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 96
+Group: 0008, Length:       88
+0008 1150       26 //    ID Referenced SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 1155       46 // ID Referenced SOP Instance UID//1.3.6.1.4.1.21367.201599.3.201512041353035.13
+DCM Dump Elements Complete
+
+DCM Dump Sequence Complete
+Group: 0040, Length:       30
+0040 a010        8 //          PRC Relationship Type//CONTAINS
+0040 a040        6 //                 PRC Value Type//IMAGE 
+DCM Dump Elements Complete
+
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 162
+Group: 0008, Length: 4294967303
+0008 1199 4294967295 //     ID Referenced SOP Sequence//SEQUENCE
+DCM Dump Sequence
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 96
+Group: 0008, Length:       88
+0008 1150       26 //    ID Referenced SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 1155       46 // ID Referenced SOP Instance UID//1.3.6.1.4.1.21367.201599.3.201512041353035.35
+DCM Dump Elements Complete
+
+DCM Dump Sequence Complete
+Group: 0040, Length:       30
+0040 a010        8 //          PRC Relationship Type//CONTAINS
+0040 a040        6 //                 PRC Value Type//IMAGE 
+DCM Dump Elements Complete
+
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 162
+Group: 0008, Length: 4294967303
+0008 1199 4294967295 //     ID Referenced SOP Sequence//SEQUENCE
+DCM Dump Sequence
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 96
+Group: 0008, Length:       88
+0008 1150       26 //    ID Referenced SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 1155       46 // ID Referenced SOP Instance UID//1.3.6.1.4.1.21367.201599.3.201512041353035.32
+DCM Dump Elements Complete
+
+DCM Dump Sequence Complete
+Group: 0040, Length:       30
+0040 a010        8 //          PRC Relationship Type//CONTAINS
+0040 a040        6 //                 PRC Value Type//IMAGE 
+DCM Dump Elements Complete
+
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 162
+Group: 0008, Length: 4294967303
+0008 1199 4294967295 //     ID Referenced SOP Sequence//SEQUENCE
+DCM Dump Sequence
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 96
+Group: 0008, Length:       88
+0008 1150       26 //    ID Referenced SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 1155       46 // ID Referenced SOP Instance UID//1.3.6.1.4.1.21367.201599.3.201512041353035.33
+DCM Dump Elements Complete
+
+DCM Dump Sequence Complete
+Group: 0040, Length:       30
+0040 a010        8 //          PRC Relationship Type//CONTAINS
+0040 a040        6 //                 PRC Value Type//IMAGE 
+DCM Dump Elements Complete
+
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 162
+Group: 0008, Length: 4294967303
+0008 1199 4294967295 //     ID Referenced SOP Sequence//SEQUENCE
+DCM Dump Sequence
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 96
+Group: 0008, Length:       88
+0008 1150       26 //    ID Referenced SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 1155       46 // ID Referenced SOP Instance UID//1.3.6.1.4.1.21367.201599.3.201512041353035.34
+DCM Dump Elements Complete
+
+DCM Dump Sequence Complete
+Group: 0040, Length:       30
+0040 a010        8 //          PRC Relationship Type//CONTAINS
+0040 a040        6 //                 PRC Value Type//IMAGE 
+DCM Dump Elements Complete
+
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 162
+Group: 0008, Length: 4294967303
+0008 1199 4294967295 //     ID Referenced SOP Sequence//SEQUENCE
+DCM Dump Sequence
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 96
+Group: 0008, Length:       88
+0008 1150       26 //    ID Referenced SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 1155       46 // ID Referenced SOP Instance UID//1.3.6.1.4.1.21367.201599.3.201512041353035.22
+DCM Dump Elements Complete
+
+DCM Dump Sequence Complete
+Group: 0040, Length:       30
+0040 a010        8 //          PRC Relationship Type//CONTAINS
+0040 a040        6 //                 PRC Value Type//IMAGE 
+DCM Dump Elements Complete
+
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 162
+Group: 0008, Length: 4294967303
+0008 1199 4294967295 //     ID Referenced SOP Sequence//SEQUENCE
+DCM Dump Sequence
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 96
+Group: 0008, Length:       88
+0008 1150       26 //    ID Referenced SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 1155       46 // ID Referenced SOP Instance UID//1.3.6.1.4.1.21367.201599.3.201512041353035.30
+DCM Dump Elements Complete
+
+DCM Dump Sequence Complete
+Group: 0040, Length:       30
+0040 a010        8 //          PRC Relationship Type//CONTAINS
+0040 a040        6 //                 PRC Value Type//IMAGE 
+DCM Dump Elements Complete
+
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 162
+Group: 0008, Length: 4294967303
+0008 1199 4294967295 //     ID Referenced SOP Sequence//SEQUENCE
+DCM Dump Sequence
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 96
+Group: 0008, Length:       88
+0008 1150       26 //    ID Referenced SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 1155       46 // ID Referenced SOP Instance UID//1.3.6.1.4.1.21367.201599.3.201512041353035.18
+DCM Dump Elements Complete
+
+DCM Dump Sequence Complete
+Group: 0040, Length:       30
+0040 a010        8 //          PRC Relationship Type//CONTAINS
+0040 a040        6 //                 PRC Value Type//IMAGE 
+DCM Dump Elements Complete
+
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 160
+Group: 0008, Length: 4294967303
+0008 1199 4294967295 //     ID Referenced SOP Sequence//SEQUENCE
+DCM Dump Sequence
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 94
+Group: 0008, Length:       86
+0008 1150       26 //    ID Referenced SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 1155       44 // ID Referenced SOP Instance UID//1.3.6.1.4.1.21367.201599.3.201512041353035.9
+DCM Dump Elements Complete
+
+DCM Dump Sequence Complete
+Group: 0040, Length:       30
+0040 a010        8 //          PRC Relationship Type//CONTAINS
+0040 a040        6 //                 PRC Value Type//IMAGE 
+DCM Dump Elements Complete
+
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 160
+Group: 0008, Length: 4294967303
+0008 1199 4294967295 //     ID Referenced SOP Sequence//SEQUENCE
+DCM Dump Sequence
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 94
+Group: 0008, Length:       86
+0008 1150       26 //    ID Referenced SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 1155       44 // ID Referenced SOP Instance UID//1.3.6.1.4.1.21367.201599.3.201512041353035.2
+DCM Dump Elements Complete
+
+DCM Dump Sequence Complete
+Group: 0040, Length:       30
+0040 a010        8 //          PRC Relationship Type//CONTAINS
+0040 a040        6 //                 PRC Value Type//IMAGE 
+DCM Dump Elements Complete
+
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 160
+Group: 0008, Length: 4294967303
+0008 1199 4294967295 //     ID Referenced SOP Sequence//SEQUENCE
+DCM Dump Sequence
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 94
+Group: 0008, Length:       86
+0008 1150       26 //    ID Referenced SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 1155       44 // ID Referenced SOP Instance UID//1.3.6.1.4.1.21367.201599.3.201512041353035.4
+DCM Dump Elements Complete
+
+DCM Dump Sequence Complete
+Group: 0040, Length:       30
+0040 a010        8 //          PRC Relationship Type//CONTAINS
+0040 a040        6 //                 PRC Value Type//IMAGE 
+DCM Dump Elements Complete
+
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 162
+Group: 0008, Length: 4294967303
+0008 1199 4294967295 //     ID Referenced SOP Sequence//SEQUENCE
+DCM Dump Sequence
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 96
+Group: 0008, Length:       88
+0008 1150       26 //    ID Referenced SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 1155       46 // ID Referenced SOP Instance UID//1.3.6.1.4.1.21367.201599.3.201512041353035.20
+DCM Dump Elements Complete
+
+DCM Dump Sequence Complete
+Group: 0040, Length:       30
+0040 a010        8 //          PRC Relationship Type//CONTAINS
+0040 a040        6 //                 PRC Value Type//IMAGE 
+DCM Dump Elements Complete
+
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 162
+Group: 0008, Length: 4294967303
+0008 1199 4294967295 //     ID Referenced SOP Sequence//SEQUENCE
+DCM Dump Sequence
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 96
+Group: 0008, Length:       88
+0008 1150       26 //    ID Referenced SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 1155       46 // ID Referenced SOP Instance UID//1.3.6.1.4.1.21367.201599.3.201512041353035.11
+DCM Dump Elements Complete
+
+DCM Dump Sequence Complete
+Group: 0040, Length:       30
+0040 a010        8 //          PRC Relationship Type//CONTAINS
+0040 a040        6 //                 PRC Value Type//IMAGE 
+DCM Dump Elements Complete
+
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 162
+Group: 0008, Length: 4294967303
+0008 1199 4294967295 //     ID Referenced SOP Sequence//SEQUENCE
+DCM Dump Sequence
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 96
+Group: 0008, Length:       88
+0008 1150       26 //    ID Referenced SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 1155       46 // ID Referenced SOP Instance UID//1.3.6.1.4.1.21367.201599.3.201512041353035.21
+DCM Dump Elements Complete
+
+DCM Dump Sequence Complete
+Group: 0040, Length:       30
+0040 a010        8 //          PRC Relationship Type//CONTAINS
+0040 a040        6 //                 PRC Value Type//IMAGE 
+DCM Dump Elements Complete
+
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 158
+Group: 0008, Length: 4294967303
+0008 1199 4294967295 //     ID Referenced SOP Sequence//SEQUENCE
+DCM Dump Sequence
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 92
+Group: 0008, Length:       84
+0008 1150       26 //    ID Referenced SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 1155       42 // ID Referenced SOP Instance UID//1.3.6.1.4.1.21367.201599.3.201512041353035
+DCM Dump Elements Complete
+
+DCM Dump Sequence Complete
+Group: 0040, Length:       30
+0040 a010        8 //          PRC Relationship Type//CONTAINS
+0040 a040        6 //                 PRC Value Type//IMAGE 
+DCM Dump Elements Complete
+
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 160
+Group: 0008, Length: 4294967303
+0008 1199 4294967295 //     ID Referenced SOP Sequence//SEQUENCE
+DCM Dump Sequence
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 94
+Group: 0008, Length:       86
+0008 1150       26 //    ID Referenced SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 1155       44 // ID Referenced SOP Instance UID//1.3.6.1.4.1.21367.201599.3.201512041353035.1
+DCM Dump Elements Complete
+
+DCM Dump Sequence Complete
+Group: 0040, Length:       30
+0040 a010        8 //          PRC Relationship Type//CONTAINS
+0040 a040        6 //                 PRC Value Type//IMAGE 
+DCM Dump Elements Complete
+
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 162
+Group: 0008, Length: 4294967303
+0008 1199 4294967295 //     ID Referenced SOP Sequence//SEQUENCE
+DCM Dump Sequence
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 96
+Group: 0008, Length:       88
+0008 1150       26 //    ID Referenced SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 1155       46 // ID Referenced SOP Instance UID//1.3.6.1.4.1.21367.201599.3.201512041353035.10
+DCM Dump Elements Complete
+
+DCM Dump Sequence Complete
+Group: 0040, Length:       30
+0040 a010        8 //          PRC Relationship Type//CONTAINS
+0040 a040        6 //                 PRC Value Type//IMAGE 
+DCM Dump Elements Complete
+
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 162
+Group: 0008, Length: 4294967303
+0008 1199 4294967295 //     ID Referenced SOP Sequence//SEQUENCE
+DCM Dump Sequence
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 96
+Group: 0008, Length:       88
+0008 1150       26 //    ID Referenced SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 1155       46 // ID Referenced SOP Instance UID//1.3.6.1.4.1.21367.201599.3.201512041353035.16
+DCM Dump Elements Complete
+
+DCM Dump Sequence Complete
+Group: 0040, Length:       30
+0040 a010        8 //          PRC Relationship Type//CONTAINS
+0040 a040        6 //                 PRC Value Type//IMAGE 
+DCM Dump Elements Complete
+
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 162
+Group: 0008, Length: 4294967303
+0008 1199 4294967295 //     ID Referenced SOP Sequence//SEQUENCE
+DCM Dump Sequence
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 96
+Group: 0008, Length:       88
+0008 1150       26 //    ID Referenced SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 1155       46 // ID Referenced SOP Instance UID//1.3.6.1.4.1.21367.201599.3.201512041353035.26
+DCM Dump Elements Complete
+
+DCM Dump Sequence Complete
+Group: 0040, Length:       30
+0040 a010        8 //          PRC Relationship Type//CONTAINS
+0040 a040        6 //                 PRC Value Type//IMAGE 
+DCM Dump Elements Complete
+
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 160
+Group: 0008, Length: 4294967303
+0008 1199 4294967295 //     ID Referenced SOP Sequence//SEQUENCE
+DCM Dump Sequence
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 94
+Group: 0008, Length:       86
+0008 1150       26 //    ID Referenced SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 1155       44 // ID Referenced SOP Instance UID//1.3.6.1.4.1.21367.201599.3.201512041353035.7
+DCM Dump Elements Complete
+
+DCM Dump Sequence Complete
+Group: 0040, Length:       30
+0040 a010        8 //          PRC Relationship Type//CONTAINS
+0040 a040        6 //                 PRC Value Type//IMAGE 
+DCM Dump Elements Complete
+
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 160
+Group: 0008, Length: 4294967303
+0008 1199 4294967295 //     ID Referenced SOP Sequence//SEQUENCE
+DCM Dump Sequence
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 94
+Group: 0008, Length:       86
+0008 1150       26 //    ID Referenced SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 1155       44 // ID Referenced SOP Instance UID//1.3.6.1.4.1.21367.201599.3.201512041353035.8
+DCM Dump Elements Complete
+
+DCM Dump Sequence Complete
+Group: 0040, Length:       30
+0040 a010        8 //          PRC Relationship Type//CONTAINS
+0040 a040        6 //                 PRC Value Type//IMAGE 
+DCM Dump Elements Complete
+
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 160
+Group: 0008, Length: 4294967303
+0008 1199 4294967295 //     ID Referenced SOP Sequence//SEQUENCE
+DCM Dump Sequence
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 94
+Group: 0008, Length:       86
+0008 1150       26 //    ID Referenced SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 1155       44 // ID Referenced SOP Instance UID//1.3.6.1.4.1.21367.201599.3.201512041353035.6
+DCM Dump Elements Complete
+
+DCM Dump Sequence Complete
+Group: 0040, Length:       30
+0040 a010        8 //          PRC Relationship Type//CONTAINS
+0040 a040        6 //                 PRC Value Type//IMAGE 
+DCM Dump Elements Complete
+
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 162
+Group: 0008, Length: 4294967303
+0008 1199 4294967295 //     ID Referenced SOP Sequence//SEQUENCE
+DCM Dump Sequence
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 96
+Group: 0008, Length:       88
+0008 1150       26 //    ID Referenced SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 1155       46 // ID Referenced SOP Instance UID//1.3.6.1.4.1.21367.201599.3.201512041353035.17
+DCM Dump Elements Complete
+
+DCM Dump Sequence Complete
+Group: 0040, Length:       30
+0040 a010        8 //          PRC Relationship Type//CONTAINS
+0040 a040        6 //                 PRC Value Type//IMAGE 
+DCM Dump Elements Complete
+
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 160
+Group: 0008, Length: 4294967303
+0008 1199 4294967295 //     ID Referenced SOP Sequence//SEQUENCE
+DCM Dump Sequence
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 94
+Group: 0008, Length:       86
+0008 1150       26 //    ID Referenced SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 1155       44 // ID Referenced SOP Instance UID//1.3.6.1.4.1.21367.201599.3.201512041353035.5
+DCM Dump Elements Complete
+
+DCM Dump Sequence Complete
+Group: 0040, Length:       30
+0040 a010        8 //          PRC Relationship Type//CONTAINS
+0040 a040        6 //                 PRC Value Type//IMAGE 
+DCM Dump Elements Complete
+
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 162
+Group: 0008, Length: 4294967303
+0008 1199 4294967295 //     ID Referenced SOP Sequence//SEQUENCE
+DCM Dump Sequence
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 96
+Group: 0008, Length:       88
+0008 1150       26 //    ID Referenced SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 1155       46 // ID Referenced SOP Instance UID//1.3.6.1.4.1.21367.201599.3.201512041353035.29
+DCM Dump Elements Complete
+
+DCM Dump Sequence Complete
+Group: 0040, Length:       30
+0040 a010        8 //          PRC Relationship Type//CONTAINS
+0040 a040        6 //                 PRC Value Type//IMAGE 
+DCM Dump Elements Complete
+
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 162
+Group: 0008, Length: 4294967303
+0008 1199 4294967295 //     ID Referenced SOP Sequence//SEQUENCE
+DCM Dump Sequence
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 96
+Group: 0008, Length:       88
+0008 1150       26 //    ID Referenced SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 1155       46 // ID Referenced SOP Instance UID//1.3.6.1.4.1.21367.201599.3.201512041353035.25
+DCM Dump Elements Complete
+
+DCM Dump Sequence Complete
+Group: 0040, Length:       30
+0040 a010        8 //          PRC Relationship Type//CONTAINS
+0040 a040        6 //                 PRC Value Type//IMAGE 
+DCM Dump Elements Complete
+
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 162
+Group: 0008, Length: 4294967303
+0008 1199 4294967295 //     ID Referenced SOP Sequence//SEQUENCE
+DCM Dump Sequence
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 96
+Group: 0008, Length:       88
+0008 1150       26 //    ID Referenced SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 1155       46 // ID Referenced SOP Instance UID//1.3.6.1.4.1.21367.201599.3.201512041353035.12
+DCM Dump Elements Complete
+
+DCM Dump Sequence Complete
+Group: 0040, Length:       30
+0040 a010        8 //          PRC Relationship Type//CONTAINS
+0040 a040        6 //                 PRC Value Type//IMAGE 
+DCM Dump Elements Complete
+
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 162
+Group: 0008, Length: 4294967303
+0008 1199 4294967295 //     ID Referenced SOP Sequence//SEQUENCE
+DCM Dump Sequence
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 96
+Group: 0008, Length:       88
+0008 1150       26 //    ID Referenced SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 1155       46 // ID Referenced SOP Instance UID//1.3.6.1.4.1.21367.201599.3.201512041353035.24
+DCM Dump Elements Complete
+
+DCM Dump Sequence Complete
+Group: 0040, Length:       30
+0040 a010        8 //          PRC Relationship Type//CONTAINS
+0040 a040        6 //                 PRC Value Type//IMAGE 
+DCM Dump Elements Complete
+
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 162
+Group: 0008, Length: 4294967303
+0008 1199 4294967295 //     ID Referenced SOP Sequence//SEQUENCE
+DCM Dump Sequence
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 96
+Group: 0008, Length:       88
+0008 1150       26 //    ID Referenced SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 1155       46 // ID Referenced SOP Instance UID//1.3.6.1.4.1.21367.201599.3.201512041353035.31
+DCM Dump Elements Complete
+
+DCM Dump Sequence Complete
+Group: 0040, Length:       30
+0040 a010        8 //          PRC Relationship Type//CONTAINS
+0040 a040        6 //                 PRC Value Type//IMAGE 
+DCM Dump Elements Complete
+
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 160
+Group: 0008, Length: 4294967303
+0008 1199 4294967295 //     ID Referenced SOP Sequence//SEQUENCE
+DCM Dump Sequence
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 94
+Group: 0008, Length:       86
+0008 1150       26 //    ID Referenced SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 1155       44 // ID Referenced SOP Instance UID//1.3.6.1.4.1.21367.201599.3.201512041353034.1
+DCM Dump Elements Complete
+
+DCM Dump Sequence Complete
+Group: 0040, Length:       30
+0040 a010        8 //          PRC Relationship Type//CONTAINS
+0040 a040        6 //                 PRC Value Type//IMAGE 
+DCM Dump Elements Complete
+
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 160
+Group: 0008, Length: 4294967303
+0008 1199 4294967295 //     ID Referenced SOP Sequence//SEQUENCE
+DCM Dump Sequence
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 94
+Group: 0008, Length:       86
+0008 1150       26 //    ID Referenced SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 1155       44 // ID Referenced SOP Instance UID//1.3.6.1.4.1.21367.201599.3.201512041353035.3
+DCM Dump Elements Complete
+
+DCM Dump Sequence Complete
+Group: 0040, Length:       30
+0040 a010        8 //          PRC Relationship Type//CONTAINS
+0040 a040        6 //                 PRC Value Type//IMAGE 
+DCM Dump Elements Complete
+
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 162
+Group: 0008, Length: 4294967303
+0008 1199 4294967295 //     ID Referenced SOP Sequence//SEQUENCE
+DCM Dump Sequence
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 96
+Group: 0008, Length:       88
+0008 1150       26 //    ID Referenced SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 1155       46 // ID Referenced SOP Instance UID//1.3.6.1.4.1.21367.201599.3.201512041353035.23
+DCM Dump Elements Complete
+
+DCM Dump Sequence Complete
+Group: 0040, Length:       30
+0040 a010        8 //          PRC Relationship Type//CONTAINS
+0040 a040        6 //                 PRC Value Type//IMAGE 
+DCM Dump Elements Complete
+
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 162
+Group: 0008, Length: 4294967303
+0008 1199 4294967295 //     ID Referenced SOP Sequence//SEQUENCE
+DCM Dump Sequence
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 96
+Group: 0008, Length:       88
+0008 1150       26 //    ID Referenced SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 1155       46 // ID Referenced SOP Instance UID//1.3.6.1.4.1.21367.201599.3.201512041353035.27
+DCM Dump Elements Complete
+
+DCM Dump Sequence Complete
+Group: 0040, Length:       30
+0040 a010        8 //          PRC Relationship Type//CONTAINS
+0040 a040        6 //                 PRC Value Type//IMAGE 
+DCM Dump Elements Complete
+
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 162
+Group: 0008, Length: 4294967303
+0008 1199 4294967295 //     ID Referenced SOP Sequence//SEQUENCE
+DCM Dump Sequence
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 96
+Group: 0008, Length:       88
+0008 1150       26 //    ID Referenced SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 1155       46 // ID Referenced SOP Instance UID//1.3.6.1.4.1.21367.201599.3.201512041353035.28
+DCM Dump Elements Complete
+
+DCM Dump Sequence Complete
+Group: 0040, Length:       30
+0040 a010        8 //          PRC Relationship Type//CONTAINS
+0040 a040        6 //                 PRC Value Type//IMAGE 
+DCM Dump Elements Complete
+
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 162
+Group: 0008, Length: 4294967303
+0008 1199 4294967295 //     ID Referenced SOP Sequence//SEQUENCE
+DCM Dump Sequence
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 96
+Group: 0008, Length:       88
+0008 1150       26 //    ID Referenced SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 1155       46 // ID Referenced SOP Instance UID//1.3.6.1.4.1.21367.201599.3.201512041353035.19
+DCM Dump Elements Complete
+
+DCM Dump Sequence Complete
+Group: 0040, Length:       30
+0040 a010        8 //          PRC Relationship Type//CONTAINS
+0040 a040        6 //                 PRC Value Type//IMAGE 
+DCM Dump Elements Complete
+
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 162
+Group: 0008, Length: 4294967303
+0008 1199 4294967295 //     ID Referenced SOP Sequence//SEQUENCE
+DCM Dump Sequence
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 96
+Group: 0008, Length:       88
+0008 1150       26 //    ID Referenced SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 1155       46 // ID Referenced SOP Instance UID//1.3.6.1.4.1.21367.201599.3.201512041353035.14
+DCM Dump Elements Complete
+
+DCM Dump Sequence Complete
+Group: 0040, Length:       30
+0040 a010        8 //          PRC Relationship Type//CONTAINS
+0040 a040        6 //                 PRC Value Type//IMAGE 
+DCM Dump Elements Complete
+
+DCM Dump Sequence Complete
+DCM Dump Elements Complete
+
+~
+$ 

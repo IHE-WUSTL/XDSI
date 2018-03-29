@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- rig-2007  Unknown Imaging Document Source, Single IDS
+     A retrieve request is sent to the  Responding Imaging Gateway for one 
+     imaging study from Imaging Document Source E using one transfer syntax 
+     value:
+        1.2.840.10008.1.2.1
+     The respositoryUniqueId in the RAD-75 request does not represent an Imaging 
+     Document Source that is known to the Responding Imaging Gateway. The test 
+     points are:
+        1. The Responding Imaging Gateway is able to accept a RAD-75 transaction 
+           from an Initiating Imaging Gateway simulator, trigger a RAD-69 
+           transaction to the Imaging Document Source simulator (E), gather the 
+           results and return a proper RAD-75 response to the Initiating Imaging 
+           Gateway simulator.
+        2. The RAD-69 transaction includes all parameters, including the proper 
+           Repository Unique ID.
+        3. No images are returned in the RAD-75 response.
+ -->
+<Test id="rig-2007" sut="rig">
+   <Namespaces>
+      <Namespace uri="http://www.w3.org/2003/05/soap-envelope" prefix="soapenv" />
+      <Namespace uri="http://www.w3.org/2005/08/addressing" prefix="wsa" />
+      <Namespace uri="urn:oasis:names:tc:ebxml-regrep:xsd:rs:3.0" prefix="rs" />
+      <Namespace uri="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0" prefix="rim" />
+      <Namespace uri="urn:ihe:rad:xdsi-b:2009" prefix="xdsib" />
+      <Namespace uri="urn:ihe:iti:xds-b:2007" prefix="xdsb" />
+   </Namespaces>
+   <Transactions>
+      <Transaction id="RAD-75" name="Unknown IDS RAD-75">
+  			<Component id="ResponseHeader" subTitle="CrossGatewayRetrieveDocumentSetResponse">
+				<Assertions>
+					<Assertion name="Action element" type="present"
+						xpath="//soapenv:Header/wsa:Action" />
+					<Assertion name="Action text" type="constant"
+						xpath="//soapenv:Header/wsa:Action/text()" value="urn:ihe:rad:2011:CrossGatewayRetrieveImagingDocumentSetResponse" />
+				</Assertions>
+			</Component>
+         <Component id="ResponseBody" subTitle="CrossGatewayRetrieveDocumentSetResponse">
+				<Assertions>
+					<Assertion name="status code" type="constant"
+						xpath="//xdsb:RetrieveDocumentSetResponse/rs:RegistryResponse/@status"
+						value="urn:oasis:names:tc:ebxml-regrep:ResponseStatusType:Failure" />
+					<Assertion name="DocumentResponse element" type="absent"
+						xpath="//xdsb:RetrieveDocumentSetResponse/xdsb:DocumentResponse" />
+				</Assertions>
+         </Component>
+      </Transaction>
+      <!--  There is no RAD-69 transaction -->
+      <!--  The Imaging Document Source is not known, so no RAD-69 transaction is sent -->
+   </Transactions>
+</Test>

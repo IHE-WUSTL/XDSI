@@ -1,0 +1,5 @@
+# Configuration parameters for an Imaging Document Source
+ACCEPTS_RAD4=no
+SCP_AE_TITLE=xxx
+SCP_HOST=localhost
+SCP_PORT=4000

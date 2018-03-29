@@ -1,0 +1,6 @@
+POST /xdstools2/sim/xdsi01__rep-reg/rep/prb HTTP/1.1
+content-type: multipart/related; boundary="MIMEBoundary_2929dcecea9205fd180bd4cf039b02afba6e3abd608cd27b"; type="application/xop+xml"; start="<0.3929dcecea9205fd180bd4cf039b02afba6e3abd608cd27b@apache.org>"; start-info="application/soap+xml"; action="urn:ihe:iti:2007:ProvideAndRegisterDocumentSet-b"
+user-agent: Axis2
+host: localhost:9280
+transfer-encoding: chunked
+

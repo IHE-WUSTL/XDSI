@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestPlan>
+    <Test>RAD-68</Test>
+    <TestStep id="submit_kos">
+        <ExpectedStatus>Success</ExpectedStatus>
+        <ProvideAndRegisterTransaction>
+            <XDSb/>
+            <AssignUuids/>
+            <MetadataFile>metadata.xml</MetadataFile>
+            <Document id="Document01">kos.dcm</Document>
+        </ProvideAndRegisterTransaction>
+    </TestStep>
+</TestPlan>

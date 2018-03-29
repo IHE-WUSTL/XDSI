@@ -1,0 +1,4 @@
+HTTP,10280,localhost,9280
+HTTP,10800,localhost,8380
+DICOM,10300,localhost,3000
+DICOM,10330,localhost,3300

@@ -1,0 +1,5 @@
+# Test for multiple Transfer Syntaxes
+# None of which are available on IDS
+1.2.840.10008.1.2.4.50          # JPEG Baseline
+1.2.840.10008.1.2.4.51          # JPEG Extended
+1.2.840.10008.1.2.4.57          # JPEG Lossless

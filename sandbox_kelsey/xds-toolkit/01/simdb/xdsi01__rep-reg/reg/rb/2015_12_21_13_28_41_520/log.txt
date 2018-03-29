@@ -1,0 +1,425 @@
+**** Web Service: /xdstools2/sim/xdsi01__rep-reg/reg/rb [ServiceRequestContainer] 	VC: [???]
+SECTIONHEADING
+    Endpoint[OK]
+
+DETAIL
+    Endpoint is /xdstools2/sim/xdsi01__rep-reg/reg/rb[OK]
+
+Default ErrorRecorder [ServiceRequestContainer] 	VC: [Request;Register;HTTP;SOAP;xds.b]
+DETAIL
+    Assigned UUIDs[OK]
+
+DETAIL
+    id_5 ==> urn:uuid:6c6fc8a2-c6f5-422a-89ef-92db13890536[OK]
+
+DETAIL
+    id_4 ==> urn:uuid:fb957a83-561a-4f1b-890e-d9aa5d902fee[OK]
+
+DETAIL
+    id_7 ==> urn:uuid:5636b57b-09a9-4f29-900a-f7e74e49add2[OK]
+
+DETAIL
+    id_6 ==> urn:uuid:a6bdf5fe-a1b8-49cf-b10d-f01cb99378c6[OK]
+
+DETAIL
+    id_9 ==> urn:uuid:2416132a-58a4-4977-b8f7-95b30600773c[OK]
+
+DETAIL
+    id_8 ==> urn:uuid:f44f54b5-0927-49ec-ab47-889007d8f984[OK]
+
+DETAIL
+    id_13 ==> urn:uuid:d9b2b698-83db-4bc2-b442-8a2f8d88c9a8[OK]
+
+DETAIL
+    id_14 ==> urn:uuid:367dfa3d-8ad1-4f1a-a0df-f949350a53da[OK]
+
+DETAIL
+    id_11 ==> urn:uuid:6d4066fd-568a-4db2-87d8-907c47b168b2[OK]
+
+DETAIL
+    id_12 ==> urn:uuid:b13b24a9-0046-48d1-bb05-c57c55d44559[OK]
+
+DETAIL
+    id_10 ==> urn:uuid:6720f997-c36c-4d8b-8c61-f284eaabf184[OK]
+
+DETAIL
+    id_1 ==> urn:uuid:998b173d-8a3d-426d-b0fd-ec0ad5382418[OK]
+
+DETAIL
+    id_17 ==> urn:uuid:fb0c4448-f5f0-4848-a22e-92a4d43feac3[OK]
+
+DETAIL
+    id_3 ==> urn:uuid:9325747b-699b-4850-9a7d-fb1f76638a59[OK]
+
+DETAIL
+    id_15 ==> urn:uuid:b66222e9-c3b9-4355-8259-dede7dfcf0d8[OK]
+
+DETAIL
+    id_2 ==> urn:uuid:7918c8aa-428b-4665-91d8-b1800cde1600[OK]
+
+DETAIL
+    id_16 ==> urn:uuid:0c323fa5-580e-4fb8-9004-d98f5bd32aa9[OK]
+
+DETAIL
+    Wrapping response in SOAP Message[OK]
+
+Parse HTTP Message [HttpMessageValidator] 	VC: [Request;Register;HTTP;SOAP;xds.b]
+SECTIONHEADING
+    HTTP message format validation[OK]
+
+
+Parse SIMPLE SOAP message [SimpleSoapHttpHeaderValidator] 	VC: [Request;Register;HTTP;SOAP;xds.b]
+CHALLENGE
+    Validate SIMPLE SOAP HTTP headers[OK]
+
+
+DETAIL
+    Message CharSet: UTF-8[OK]
+
+SECTIONHEADING
+    SOAP Message[OK]
+
+Parse Decision - Running requested validation - Register.b with SOAP Wrapper [ServiceRequestContainer] 	VC: [???]
+SOAP Message Parser [SoapMessageParser] 	VC: [Request;Register;HTTP;SOAP;xds.b]
+SOAP Message Validator [SoapMessageValidator] 	VC: [Request;Register;HTTP;SOAP;xds.b]
+
+
+
+
+CHALLENGE
+    Validate SOAP Header[OK]
+
+
+DETAIL
+    Namespace on WS:Addressing Header elements: No errors[OK]
+
+
+
+
+
+
+
+DETAIL
+    Cardinality of WS:Addressing Header elements: No errors[OK]
+
+DETAIL
+    WS-Action: urn:ihe:iti:2007:RegisterDocumentSet-b[OK]
+
+
+
+
+CHALLENGE
+    Checking expected WS-Action against SOAP Body contents[OK]
+
+DETAIL
+    Scheduling validation of body based on requested message type[OK]
+
+Message Body Container [MessageBodyContainer] 	VC: [Request;Register;HTTP;SOAP;xds.b]
+Parse Metadata Wrappers [WrapperValidator] 	VC: [Request;Register;HTTP;SOAP;xds.b]
+Validate Metadata Element Ordering [MetadataOrderValidator] 	VC: [Request;Register;HTTP;SOAP;xds.b]
+Schema Validator [SchemaValidator] 	VC: [Request;Register;HTTP;SOAP;xds.b]
+DETAIL
+    Metadata Type (for selecting Schema) is METADATA_TYPE_Rb[OK]
+
+SubmitObjectsRequest [MetadataMessageValidator] 	VC: [Request;Register;HTTP;SOAP;xds.b]
+SECTIONHEADING
+    Content Summary[OK]
+
+DETAIL
+    1 SubmissionSets[OK]
+
+DETAIL
+    1 DocumentEntries[OK]
+
+DETAIL
+    0 Folders[OK]
+
+DETAIL
+    1 Associations[OK]
+
+SECTIONHEADING
+    Evaluating metadata object structure[OK]
+
+SECTIONHEADING
+    SubmissionSet(urn:uuid:fce4e0af-6759-4a85-9f45-a5216d7e0d09)[OK]
+
+CHALLENGE
+    Validating that Slots present are legal[OK]
+
+CHALLENGE
+    Validating required Slots present[OK]
+
+CHALLENGE
+    Validating Slots are coded correctly[OK]
+
+CHALLENGE
+    Validating Classifications present are legal[OK]
+
+CHALLENGE
+    Validating Required Classifications present[OK]
+
+CHALLENGE
+    Validating Classifications coded correctly[OK]
+
+CHALLENGE
+    Validating ExternalIdentifiers present are legal[OK]
+
+CHALLENGE
+    Validating Required ExternalIdentifiers present[OK]
+
+CHALLENGE
+    Validating ExternalIdentifiers coded correctly[OK]
+
+SECTIONHEADING
+    DocumentEntry(urn:uuid:8807565c-b95d-404c-b638-964cafaa5f27)[OK]
+
+CHALLENGE
+    Validating that Slots present are legal[OK]
+
+CHALLENGE
+    Validating required Slots present[OK]
+
+CHALLENGE
+    Validating Slots are coded correctly[OK]
+
+CHALLENGE
+    Validating Classifications present are legal[OK]
+
+CHALLENGE
+    Validating Required Classifications present[OK]
+
+CHALLENGE
+    Validating Classifications coded correctly[OK]
+
+CHALLENGE
+    Validating ExternalIdentifiers present are legal[OK]
+
+CHALLENGE
+    Validating Required ExternalIdentifiers present[OK]
+
+CHALLENGE
+    Validating ExternalIdentifiers coded correctly[OK]
+
+SECTIONHEADING
+    Association(urn:uuid:9d03bdbd-5915-4b4c-b4bc-952fb89805d9)[OK]
+
+CHALLENGE
+    Validating that Slots present are legal[OK]
+
+CHALLENGE
+    Validating required Slots present[OK]
+
+CHALLENGE
+    Validating Slots are coded correctly[OK]
+
+CHALLENGE
+    Classifications present are legal[OK]
+
+CHALLENGE
+    Required Classifications present[OK]
+
+CHALLENGE
+    Classifications coded correctly[OK]
+
+CHALLENGE
+    Validating ExternalIdentifiers present are legal[OK]
+
+CHALLENGE
+    Validating Required ExternalIdentifiers present[OK]
+
+CHALLENGE
+    Validating ExternalIdentifiers coded correctly[OK]
+
+SECTIONHEADING
+    Other metadata objects[OK]
+
+SECTIONHEADING
+    Evaluating use of Affinity Domain coding[OK]
+
+SECTIONHEADING
+    Submission Structure[OK]
+
+DETAIL
+    SubmissionSet(urn:uuid:fce4e0af-6759-4a85-9f45-a5216d7e0d09): SubmissionSet found[OK]
+
+DETAIL
+    Association(urn:uuid:9d03bdbd-5915-4b4c-b4bc-952fb89805d9): is a SubmissionSet to DocmentEntry HasMember association[OK]
+
+MetadataContainer [MetadataContainer] 	VC: [Request;Register;HTTP;SOAP;xds.b]
+DETAIL
+    0 steps with errors[OK]
+
+Register Transaction [RegRSim] 	VC: [Request;Register;HTTP;SOAP;xds.b]
+DETAIL
+    Assigned UUIDs[OK]
+
+DETAIL
+    id_5 ==> urn:uuid:6c6fc8a2-c6f5-422a-89ef-92db13890536[OK]
+
+DETAIL
+    id_4 ==> urn:uuid:fb957a83-561a-4f1b-890e-d9aa5d902fee[OK]
+
+DETAIL
+    id_7 ==> urn:uuid:5636b57b-09a9-4f29-900a-f7e74e49add2[OK]
+
+DETAIL
+    id_6 ==> urn:uuid:a6bdf5fe-a1b8-49cf-b10d-f01cb99378c6[OK]
+
+DETAIL
+    id_9 ==> urn:uuid:2416132a-58a4-4977-b8f7-95b30600773c[OK]
+
+DETAIL
+    id_8 ==> urn:uuid:f44f54b5-0927-49ec-ab47-889007d8f984[OK]
+
+DETAIL
+    id_13 ==> urn:uuid:d9b2b698-83db-4bc2-b442-8a2f8d88c9a8[OK]
+
+DETAIL
+    id_14 ==> urn:uuid:367dfa3d-8ad1-4f1a-a0df-f949350a53da[OK]
+
+DETAIL
+    id_11 ==> urn:uuid:6d4066fd-568a-4db2-87d8-907c47b168b2[OK]
+
+DETAIL
+    id_12 ==> urn:uuid:b13b24a9-0046-48d1-bb05-c57c55d44559[OK]
+
+DETAIL
+    id_10 ==> urn:uuid:6720f997-c36c-4d8b-8c61-f284eaabf184[OK]
+
+DETAIL
+    id_1 ==> urn:uuid:998b173d-8a3d-426d-b0fd-ec0ad5382418[OK]
+
+DETAIL
+    id_17 ==> urn:uuid:fb0c4448-f5f0-4848-a22e-92a4d43feac3[OK]
+
+DETAIL
+    id_3 ==> urn:uuid:9325747b-699b-4850-9a7d-fb1f76638a59[OK]
+
+DETAIL
+    id_15 ==> urn:uuid:b66222e9-c3b9-4355-8259-dede7dfcf0d8[OK]
+
+DETAIL
+    id_2 ==> urn:uuid:7918c8aa-428b-4665-91d8-b1800cde1600[OK]
+
+DETAIL
+    id_16 ==> urn:uuid:0c323fa5-580e-4fb8-9004-d98f5bd32aa9[OK]
+
+DETAIL
+    Wrapping response in SOAP Message[OK]
+
+Attach Errors [RegistryResponseGeneratorSim] 	VC: [Request;Register;HTTP;SOAP;xds.b]
+DETAIL
+    Assigned UUIDs[OK]
+
+DETAIL
+    id_5 ==> urn:uuid:6c6fc8a2-c6f5-422a-89ef-92db13890536[OK]
+
+DETAIL
+    id_4 ==> urn:uuid:fb957a83-561a-4f1b-890e-d9aa5d902fee[OK]
+
+DETAIL
+    id_7 ==> urn:uuid:5636b57b-09a9-4f29-900a-f7e74e49add2[OK]
+
+DETAIL
+    id_6 ==> urn:uuid:a6bdf5fe-a1b8-49cf-b10d-f01cb99378c6[OK]
+
+DETAIL
+    id_9 ==> urn:uuid:2416132a-58a4-4977-b8f7-95b30600773c[OK]
+
+DETAIL
+    id_8 ==> urn:uuid:f44f54b5-0927-49ec-ab47-889007d8f984[OK]
+
+DETAIL
+    id_13 ==> urn:uuid:d9b2b698-83db-4bc2-b442-8a2f8d88c9a8[OK]
+
+DETAIL
+    id_14 ==> urn:uuid:367dfa3d-8ad1-4f1a-a0df-f949350a53da[OK]
+
+DETAIL
+    id_11 ==> urn:uuid:6d4066fd-568a-4db2-87d8-907c47b168b2[OK]
+
+DETAIL
+    id_12 ==> urn:uuid:b13b24a9-0046-48d1-bb05-c57c55d44559[OK]
+
+DETAIL
+    id_10 ==> urn:uuid:6720f997-c36c-4d8b-8c61-f284eaabf184[OK]
+
+DETAIL
+    id_1 ==> urn:uuid:998b173d-8a3d-426d-b0fd-ec0ad5382418[OK]
+
+DETAIL
+    id_17 ==> urn:uuid:fb0c4448-f5f0-4848-a22e-92a4d43feac3[OK]
+
+DETAIL
+    id_3 ==> urn:uuid:9325747b-699b-4850-9a7d-fb1f76638a59[OK]
+
+DETAIL
+    id_15 ==> urn:uuid:b66222e9-c3b9-4355-8259-dede7dfcf0d8[OK]
+
+DETAIL
+    id_2 ==> urn:uuid:7918c8aa-428b-4665-91d8-b1800cde1600[OK]
+
+DETAIL
+    id_16 ==> urn:uuid:0c323fa5-580e-4fb8-9004-d98f5bd32aa9[OK]
+
+DETAIL
+    Wrapping response in SOAP Message[OK]
+
+ResponseInSoapWrapper [SoapWrapperRegistryResponseSim] 	VC: [Request;Register;HTTP;SOAP;xds.b]
+DETAIL
+    Assigned UUIDs[OK]
+
+DETAIL
+    id_5 ==> urn:uuid:6c6fc8a2-c6f5-422a-89ef-92db13890536[OK]
+
+DETAIL
+    id_4 ==> urn:uuid:fb957a83-561a-4f1b-890e-d9aa5d902fee[OK]
+
+DETAIL
+    id_7 ==> urn:uuid:5636b57b-09a9-4f29-900a-f7e74e49add2[OK]
+
+DETAIL
+    id_6 ==> urn:uuid:a6bdf5fe-a1b8-49cf-b10d-f01cb99378c6[OK]
+
+DETAIL
+    id_9 ==> urn:uuid:2416132a-58a4-4977-b8f7-95b30600773c[OK]
+
+DETAIL
+    id_8 ==> urn:uuid:f44f54b5-0927-49ec-ab47-889007d8f984[OK]
+
+DETAIL
+    id_13 ==> urn:uuid:d9b2b698-83db-4bc2-b442-8a2f8d88c9a8[OK]
+
+DETAIL
+    id_14 ==> urn:uuid:367dfa3d-8ad1-4f1a-a0df-f949350a53da[OK]
+
+DETAIL
+    id_11 ==> urn:uuid:6d4066fd-568a-4db2-87d8-907c47b168b2[OK]
+
+DETAIL
+    id_12 ==> urn:uuid:b13b24a9-0046-48d1-bb05-c57c55d44559[OK]
+
+DETAIL
+    id_10 ==> urn:uuid:6720f997-c36c-4d8b-8c61-f284eaabf184[OK]
+
+DETAIL
+    id_1 ==> urn:uuid:998b173d-8a3d-426d-b0fd-ec0ad5382418[OK]
+
+DETAIL
+    id_17 ==> urn:uuid:fb0c4448-f5f0-4848-a22e-92a4d43feac3[OK]
+
+DETAIL
+    id_3 ==> urn:uuid:9325747b-699b-4850-9a7d-fb1f76638a59[OK]
+
+DETAIL
+    id_15 ==> urn:uuid:b66222e9-c3b9-4355-8259-dede7dfcf0d8[OK]
+
+DETAIL
+    id_2 ==> urn:uuid:7918c8aa-428b-4665-91d8-b1800cde1600[OK]
+
+DETAIL
+    id_16 ==> urn:uuid:0c323fa5-580e-4fb8-9004-d98f5bd32aa9[OK]
+
+DETAIL
+    Wrapping response in SOAP Message[OK]
+

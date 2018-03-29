@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- rig-2005  Transfer Syntax Failure, Single IDS
+     A retrieve request is sent to the  Responding Imaging Gateway for one 
+     imaging study from Imaging Document Source E using one transfer syntax 
+     value:
+        1.2.840.10008.1.2.4.50
+     The image is not available on the Imaging Document Source with the 
+     requested transfer syntax, and an error code will be returned by the 
+     Imaging Document Source to the Responding Imaging Gateway. The test points 
+     are:
+        1. The Responding Imaging Gateway is able to accept a RAD-75 transaction 
+           from an Initiating Imaging Gateway simulator, trigger a RAD-69 
+           transaction to the Imaging Document Source simulator (E), gather the 
+           results and return a proper RAD-75 response to the Initiating Imaging 
+           Gateway simulator.
+        2. The RAD-69 transaction includes all parameters, including the proper 
+           Repository Unique ID.
+        3. No images are returned in the RAD-75 response.
+ -->
+<Test id="rig-2005" sut="rig">
+   <Namespaces>
+      <Namespace uri="http://www.w3.org/2003/05/soap-envelope" prefix="soapenv" />
+      <Namespace uri="http://www.w3.org/2005/08/addressing" prefix="wsa" />
+      <Namespace uri="urn:oasis:names:tc:ebxml-regrep:xsd:rs:3.0" prefix="rs" />
+      <Namespace uri="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0" prefix="rim" />
+      <Namespace uri="urn:ihe:rad:xdsi-b:2009" prefix="xdsib" />
+      <Namespace uri="urn:ihe:iti:xds-b:2007" prefix="xdsb" />
+   </Namespaces>
+   <Transactions>
+      <Transaction id="RAD-75" name="Xfer Syntax fail RAD-75">
+ 			<Component id="ResponseHeader" subTitle="CrossGatewayRetrieveDocumentSetResponse">
+				<Assertions>
+					<Assertion name="Action element" type="present"
+						xpath="//soapenv:Header/wsa:Action" />
+					<Assertion name="Action text" type="constant"
+						xpath="//soapenv:Header/wsa:Action/text()" value="urn:ihe:rad:2011:CrossGatewayRetrieveImagingDocumentSetResponse" />
+				</Assertions>
+			</Component>
+         <Component id="ResponseBody" subTitle="CrossGatewayRetrieveDocumentSetResponse">
+				<Assertions>
+					<Assertion name="status code" type="constant"
+						xpath="//xdsb:RetrieveDocumentSetResponse/rs:RegistryResponse/@status"
+						value="urn:oasis:names:tc:ebxml-regrep:ResponseStatusType:Failure" />
+					<Assertion name="DocumentResponse element" type="absent"
+						xpath="//xdsb:RetrieveDocumentSetResponse/xdsb:DocumentResponse" />
+				</Assertions>
+         </Component>
+      </Transaction>
+      <Transaction id="RAD-69" name="Xfer Syntax fail RAD-69">
+			<!-- This is ids_e grouped with the RIG simulator -->
+			<GetSoap simulatorName="ids_e" simulatorType="ids"
+				transactionType="ret.ids" />
+			<Component id="RequestHeader">
+				<Assertions>
+					<Assertion name="Action element" type="present"
+						xpath="//soapenv:Header/wsa:Action" />
+					<Assertion name="Action text" type="constant"
+						xpath="//soapenv:Header/wsa:Action/text()" value="urn:ihe:rad:2009:RetrieveImagingDocumentSet" />
+				</Assertions>
+			</Component>
+			<Component id="RequestBody">
+				<Assertions>
+					<Assertion name="requested doc(s)" type="sameImgs" />
+					<Assertion name="transfer syntax id(s)" type="sameXfer" />
+				</Assertions>
+			</Component>
+      </Transaction>
+   </Transactions>
+</Test>

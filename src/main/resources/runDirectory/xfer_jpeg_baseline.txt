@@ -1,0 +1,3 @@
+# For a RAD69 retrieve, one transfer syntax
+# JPEG Baseline, Lossy
+1.2.840.10008.1.2.4.50

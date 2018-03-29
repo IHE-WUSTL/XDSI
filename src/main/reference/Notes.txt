@@ -1,0 +1,51 @@
+How to run a RAD-68 test manually using xtools. 
+Assumes an installed standard setup.
+
+1. Make sure xtools are started. If not, run:
+
+/opt/xdsi/bin/start.sh
+
+2. generate the kos and metadata you want to test. For example, running
+
+/opt/xdsi/test/ids/ids-single-image-01.pl DCM4CHEE-111
+
+would create a directory
+
+/opt/xdsi/storage/runtime/patientId/kos (where patientId is the newly assigned id)
+containing the files
+
+kos.dcm and metadata.xml
+
+Copy these files to:
+
+/opt/xdsi/tomcat/apache-tomcat-7.0.65-xdstools2-01/webapps/xdstools2/toolkitx/testkit/testdata-repository/RAD-68
+
+Note: The files in this directory need to have the above names, so if yours
+are different, change them.
+
+3. surf to xtools: http://localhost:9280/xdstools2/
+
+   Select XDS Provide and Register in the Submit section on the left side
+
+   Select Test Data Set RAD-68
+   Send to: Check xdsi01__rep-reg
+   Patient ID enter your patient id, for example:
+
+      DEPT201512171036005^^^&1.2.3&ISO
+   
+   Click the Run Button. You should see black stuff.
+
+Note: You MUST surf to xdstools AFTER you have copied the files for the
+web app to find them.
+
+The results will be in a sub directory of:
+
+/opt/xdsi/xds-toolkit/01/simdb/xdsi01__rep-reg/rep/prb
+
+The sub directory will be named based on the time of the transaction, for
+example: 2015_12_18_11_08_47_414
+
+
+
+
+

@@ -1,0 +1,6 @@
+# For a RAD69 retrieve, two transfer syntax values
+# JPEG Baseline, Lossy
+1.2.840.10008.1.2.4.50
+#
+# JPEG Lossless, Non-Hierarchical, First-Order Prediction (Process 14...)
+1.2.840.10008.1.2.4.70

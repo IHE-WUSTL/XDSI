@@ -1,0 +1,14 @@
+gov.nist.toolkit.xdsexception.XdsInternalException: Exception thrown: gov.nist.toolkit.xdsexception.XdsInternalException
+Error XDSRegistryMetadataError  :  SubmissionSet(urn:uuid:b1b965a4-a345-483e-be5a-c933b40edc44): the code 2.16.840.1.113883.6.103(V70.0) is not found in the Affinity Domain configuration  :  
+XDSRegistryMetadataError  :  DocumentEntry(urn:uuid:51836b88-012c-45df-a9db-925ca0f0c47a): the code ADclassCodes(Images) is not found in the Affinity Domain configuration  :  
+XDSRegistryMetadataError  :  DocumentEntry(urn:uuid:51836b88-012c-45df-a9db-925ca0f0c47a): the code ADconfidentialityCodes(clinical) is not found in the Affinity Domain configuration  :  
+XDSRegistryMetadataError  :  DocumentEntry(urn:uuid:51836b88-012c-45df-a9db-925ca0f0c47a): the code ADhealthcareFacilityTypeCodes(Outpatient) is not found in the Affinity Domain configuration  :  
+XDSRegistryMetadataError  :  DocumentEntry(urn:uuid:51836b88-012c-45df-a9db-925ca0f0c47a): the code SRT(R-30254) is not found in the Affinity Domain configuration  :  
+XDSRegistryMetadataError  :  DocumentEntry(urn:uuid:51836b88-012c-45df-a9db-925ca0f0c47a): the code 2.16.840.1.113883.6.96(415232002) is not found in the Affinity Domain configuration  :  
+gov.nist.toolkit.xdsexception.XdsInternalException: Error 
+XDSRegistryMetadataError  :  SubmissionSet(urn:uuid:b1b965a4-a345-483e-be5a-c933b40edc44): the code 2.16.840.1.113883.6.103(V70.0) is not found in the Affinity Domain configuration  :  
+XDSRegistryMetadataError  :  DocumentEntry(urn:uuid:51836b88-012c-45df-a9db-925ca0f0c47a): the code ADclassCodes(Images) is not found in the Affinity Domain configuration  :  
+XDSRegistryMetadataError  :  DocumentEntry(urn:uuid:51836b88-012c-45df-a9db-925ca0f0c47a): the code ADconfidentialityCodes(clinical) is not found in the Affinity Domain configuration  :  
+XDSRegistryMetadataError  :  DocumentEntry(urn:uuid:51836b88-012c-45df-a9db-925ca0f0c47a): the code ADhealthcareFacilityTypeCodes(Outpatient) is not found in the Affinity Domain configuration  :  
+XDSRegistryMetadataError  :  DocumentEntry(urn:uuid:51836b88-012c-45df-a9db-925ca0f0c47a): the code SRT(R-30254) is not found in the Affinity Domain configuration  :  
+XDSRegistryMetadataError  :  DocumentEntry(urn:uuid:51836b88-012c-45df-a9db-925ca0f0c47a): the code 2.16.840.1.113883.6.96(415232002) is not found in the Affinity Domain configuration  :  
